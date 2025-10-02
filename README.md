@@ -51,7 +51,7 @@ POST /translate → { "text": "Hello" } → { "translated": "नमस्ते"
 
 POST /speak → { "text": "Hello" } → speaks Hindi audio
 
-Test:
+Quick test:
 
 bash
 Copy code
@@ -69,7 +69,7 @@ Select the meet_translator_extension/ folder.
 
 Open Google Meet, turn on captions (CC).
 
-The extension captures captions, sends them to the backend, and plays translated Hindi speech.
+✅ The extension captures captions, sends them to the backend, and plays translated Hindi speech.
 
 🔮 Future Work
 🔁 Two-way translation (English ↔ Hindi)
@@ -79,3 +79,6 @@ The extension captures captions, sends them to the backend, and plays translated
 🎛 Extension UI for language & backend settings
 
 🧑‍🤝‍🧑 Team collaboration features
+
+yaml
+Copy code
