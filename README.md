@@ -35,15 +35,15 @@ Copy code
 ## ⚙️ Installation  
 
 ### 1️⃣ Clone the repo  
-
+bash
 git clone https://github.com/SpandanBhoiIITM/LinguaBridge.git
 cd LinguaBridge
-### 2️⃣ Install Python dependencies
-
+2️⃣ Install Python dependencies
+bash
 Copy code
 pip install -r requirements.txt
-### 3️⃣ Run the backend
-
+3️⃣ Run the backend
+bash
 Copy code
 uvicorn app:app --reload --host 127.0.0.1 --port 8000
 ✅ Backend endpoints:
