@@ -35,7 +35,7 @@ Copy code
 ## ⚙️ Installation  
 
 ### 1️⃣ Clone the repo  
-```bash
+
 git clone https://github.com/SpandanBhoiIITM/LinguaBridge.git
 cd LinguaBridge
 2️⃣ Install Python dependencies
