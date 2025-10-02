@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Google Meet Live Translator",
+  "version": "1.0",
+  "description": "Translate Google Meet captions into Hindi (or any language).",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["https://meet.google.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
