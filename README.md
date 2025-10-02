@@ -15,21 +15,19 @@ It also comes with a **Google Meet Chrome extension** that automatically capture
 ---
 
 ## 📂 Project Structure
-
-'''plaintext
-
+```plaintext
 LinguaBridge/
-├── app.py # FastAPI backend server
-├── step1_asr.py # ASR pipeline (Vosk speech-to-text)
-├── step2_asr_mt.py # Translation (MarianMT)
-├── step3_asr_mt_tts.py # TTS (Edge-TTS + pygame)
-├── requirements.txt # Python dependencies
-├── README.md # Project documentation
+├── app.py                     # FastAPI backend server
+├── step1_asr.py               # ASR pipeline (Vosk speech-to-text)
+├── step2_asr_mt.py            # Translation (MarianMT)
+├── step3_asr_mt_tts.py        # TTS (Edge-TTS + pygame)
+├── requirements.txt           # Python dependencies
+├── README.md                  # Project documentation
 └── meet_translator_extension/ # Chrome extension
-├── manifest.json
-└── content.js
+    ├── manifest.json
+    └── content.js
+```
 
-'''
 
 ---
 
