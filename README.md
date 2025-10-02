@@ -26,3 +26,51 @@ LinguaBridge/
 └── meet_translator_extension/ # Chrome extension
     ├── manifest.json
     └── content.js
+⚙️ Installation
+1️⃣ Clone the repo
+bash
+Copy code
+git clone https://github.com/SpandanBhoiIITM/LinguaBridge.git
+cd LinguaBridge
+2️⃣ Install Python dependencies
+bash
+Copy code
+pip install -r requirements.txt
+3️⃣ Run the backend
+bash
+Copy code
+uvicorn app:app --reload --host 127.0.0.1 --port 8000
+Backend endpoints:
+
+POST /translate → { "text": "Hello" } → { "translated": "नमस्ते" }
+
+POST /speak → { "text": "Hello" } → speaks Hindi audio
+
+Quick test:
+
+bash
+Copy code
+curl -X POST http://127.0.0.1:8000/speak \
+  -H "Content-Type: application/json" \
+  -d "{\"text\":\"Hello, how are you?\"}"
+🖥 Chrome Extension Setup
+Open chrome://extensions/ in Chrome.
+
+Enable Developer mode.
+
+Click Load unpacked.
+
+Select the meet_translator_extension/ folder.
+
+Open Google Meet, turn on captions (CC).
+
+✅ The extension captures captions, sends them to the backend, and plays translated Hindi speech.
+
+🔮 Future Work
+🔁 Two-way translation (English ↔ Hindi)
+
+🌍 Support for more languages
+
+🎛 Extension UI for language & backend settings
+
+🧑‍🤝‍🧑 Team collaboration features
