@@ -14,7 +14,9 @@ It also comes with a **Google Meet Chrome extension** that automatically capture
 
 ---
 
-## 📂 Project Structure  
+## 📂 Project Structure
+
+'''plaintext
 
 LinguaBridge/
 ├── app.py # FastAPI backend server
@@ -27,8 +29,7 @@ LinguaBridge/
 ├── manifest.json
 └── content.js
 
-yaml
-Copy code
+'''
 
 ---
 
@@ -38,11 +39,11 @@ Copy code
 bash
 git clone https://github.com/SpandanBhoiIITM/LinguaBridge.git
 cd LinguaBridge
-2️⃣ Install Python dependencies
+### 2️⃣ Install Python dependencies
 bash
 Copy code
 pip install -r requirements.txt
-3️⃣ Run the backend
+### 3️⃣ Run the backend
 bash
 Copy code
 uvicorn app:app --reload --host 127.0.0.1 --port 8000
@@ -52,7 +53,7 @@ POST /translate → { "text": "Hello" } → { "translated": "नमस्ते"
 
 POST /speak → { "text": "Hello" } → speaks Hindi audio
 
-🔎 Quick test
+### 🔎 Quick test
 bash
 Copy code
 curl -X POST http://127.0.0.1:8000/speak \
@@ -74,7 +75,7 @@ Open Google Meet and turn on captions (CC).
 
 The extension will capture English captions → send to backend → speak in Hindi 🎙.
 
-🔮 Future Work
+### 🔮 Future Work
 🔁 Two-way translation (English ↔ Hindi)
 
 🌍 Support for more languages (multilingual speech-to-speech)
@@ -85,5 +86,5 @@ The extension will capture English captions → send to backend → speak in Hin
 
 🧑‍🤝‍🧑 Collaboration features for multi-user meetings
 
-🤝 Contributing
+### 🤝 Contributing
 Pull requests are welcome! If you’d like to improve the project, feel free to fork and submit a PR.
